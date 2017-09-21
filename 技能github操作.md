@@ -59,3 +59,16 @@ github设置公
 
 设置文件名中文
 
+	git config core.quotepath false
+
+
+操作流程
+
+	git diff
+	git add .
+	git commit -m "修改内容信息"
+	git pull origin master
+	git push origin master
+
+
+
