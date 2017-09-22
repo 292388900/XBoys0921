@@ -1,0 +1,7 @@
+大家先随着我来看左边这部分等号的部分。
+Agent 的地位就等同于java c++里面的对象。
+Caste是所有具有相似的结构和行为的的agent的集合。Caste的地位就等同于java里面的class。agent中data和operation就是结构特征，behavior就是行为特征。呢么什么是多agent系统呢？MAS,Multi-agent System,就是指所有的已经初始化的Agent集合。这个Initial是后面对Agent动作的一个假设。整个系统中，对于某个agent来说，他的环境就是除其之外的所有agent。两个Agent之间的通信Communications不在像java一项是消息传递和方法调用，而是当一个Agent A完成某一个动作后，会生成一个事件通知到环境中，而在环境中的Agent B观察到这一事件后根据自身的行为规则进行动作或响应，然后这一个过程就是一次通信。
+现在大家跟着我看右边用图形化的表示帮大家梳理一下这个概念。圆圈这部分就表示了这个多agent系统，这个系统包含了4个agent a1，a2，a3，a4。 每个agent都有其特有的结构特征和行为特征。他的结构特征和行为特征是什么取决于他加入了哪个caste。这个加入对应java里面的实例化，但是是可以离开这个caste并加入新的caste的。caste是相似的agent的集合，之间是可能存在继承关系的。在这个图里，Agent a1和a2都加入caste c1，a1还加入了c2。a3 a4 则在一个默认的最高层次的caste。对于a1来说，a2，a3，a4都是他的环境，但可能a1 只会观察a2和a4的动作，然后根据a2，a4 的动作和自身的行为规则进行响应。比如说 a4可能有一个动作，nice to meet you。a1 感知到之后可能会说，nice to meet you too。
+然后大家对这些概念有什么问题么？如果没有问题，我就开始讲他的形式化模型。   
+
+
