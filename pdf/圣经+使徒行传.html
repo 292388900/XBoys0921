@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>圣经+使徒行传</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>圣经使徒行传</h1>
+<h2>第一章</h2>
+<h3>原文</h3>
+<blockquote>
+<p>1:1 提阿非罗啊，我已经作了前书，论到耶稣开头一切所行所教训的，<br />
+1:2 直到他藉着圣灵吩咐所拣选的使徒，以后被接上升的日子为止。<br />
+1:3 他受害之后，用许多的凭据将自己活活地显给使徒看，四十天之久向他们显现，讲说　神国的事。<br />
+1:4 耶稣和他们聚集的时候，嘱咐他们说：“不要离开耶路撒冷，要等候父所应许的，就是你们听见我说过的。<br />
+1:5 约翰是用水施洗，但不多几日，你们要受圣灵的洗。”<br />
+1:6 他们聚集的时候，问耶稣说：“主啊，你复兴以色列国就在这时候吗？”<br />
+1:7 耶稣对他们说：“父凭着自己的权柄所定的时候、日期，不是你们可以知道的。<br />
+1:8 但圣灵降临在你们身上，你们就必得着能力；并要在耶路撒冷、犹太全地和撒马利亚，直到地极，作我的见证。”<br />
+1:9 说了这话，他们正看的时候，他就被取上升，有一朵云彩把他接去，便看不见他了。<br />
+1:10 当他往上去，他们定睛望天的时候，忽然有两个人身穿白衣，站在旁边，说：<br />
+1:11 “加利利人哪，你们为什么站着望天呢？这离开你们被接升天的耶稣，你们见他怎样往天上去，他还要怎样来。”<br />
+1:12 有一座山，名叫橄榄山，离耶路撒冷不远，约有安息日可走的路程。当下，门徒从那里回耶路撒冷去，<br />
+1:13 进了城，就上了所住的一间楼房。在那里有彼得、约翰、雅各、安得烈、腓力、多马、巴多罗买、马太、亚勒腓的儿子雅各、奋锐党的西门和雅各的儿子（注：或作“兄弟”）犹大。<br />
+1:14 这些人同着几个妇人和耶稣的母亲马利亚，并耶稣的弟兄，都同心合意地恒切祷告。 <br />
+1:15 那时，有许多人聚会，约有一百二十名，彼得就在弟兄中间站起来，<br />
+1:16 说：“弟兄们，圣灵藉大卫的口，在圣经上预言领人捉拿耶稣的犹大，这话是必须应验的。<br />
+1:17 他本来列在我们数中，并且在使徒的职任上得了一分。<br />
+1:18 这人用他作恶的工价买了一块田，以后身子仆倒，肚腹崩裂，肠子都流出来。<br />
+1:19 住在耶路撒冷的众人都知道这事，所以按着他们那里的话给那块田起名叫亚革大马，就是血田的意思。<br />
+1:20 因为诗篇上写着说：‘愿他的住处变为荒场，无人在内居住，’又说：‘愿别人得他的职分。’<br />
+1:21 所以主耶稣在我们中间始终出入的时候，<br />
+1:22 就是从约翰施洗起，直到主离开我们被接上升的日子为止，必须从那常与我们作伴的人中，立一位与我们同作耶稣复活的见证。”<br />
+1:23 于是选举两个人，就是那叫做巴撒巴，又称呼犹士都的约瑟和马提亚。(此包括徒1:23-24)<br />
+1:25 众人就祷告说：“主啊，你知道万人的心。求你从这两个人中，指明你所拣选的是谁，叫他得这使徒的位分。这位分犹大已经丢弃，往自己的地方去了。”<br />
+1:26 于是众人为他们摇签，摇出马提亚来；他就和十一个使徒同列。   
+</p>
+</blockquote>
+<h3>理解</h3>
+<p>1.1 和 1.2 应该是指得是说： 前一部书中描写了<strong>耶稣</strong>拣选使徒到被接上升的这段时间 所行所教训的。</p>
+<p>1.3 1.4 和1.5 说的是：耶稣受害之后，依旧向使徒显现，并嘱咐<strong>不要离开耶路撒冷</strong>，要<strong>等候父所应许<strong>的，就是你们听见我说过的。约翰是用水施洗，但</strong>不多几日</strong>，你们要<strong>受圣灵的洗</strong>。 从中能感受到神的爱。</p>
+<p>1.6 1.7 1.8 说的是：使徒的疑问，以及耶稣的回答，承诺。</p>
+<p>主啊，你复兴以色列国就在这时候吗？</p>
+<p>父凭着自己的权柄所定的时候、日期，<strong>不是你们可以知道的</strong>。但圣灵降临在你们身上，你们就<strong>必得<strong>着</strong>能力</strong>；并要<strong>在耶路撒冷、犹太全地和撒马利亚，直到地极，作我的见证</strong>。</p>
+<p>1.9 这句话并不是很理解。为什么耶稣说了这话，便上升看不见他了。</p>
+<p>1.0 1.11 这两句也不是很理解，忽然有两个人身穿白衣，这两个人是谁？似乎是在解释 耶稣被接升天的情景是正常的。</p>
+<p>1.12 场景转换。 耶路沙冷不远处的橄榄山，橄榄有什么象征意义么？</p>
+<p>1.13 1.14  十一个门徒同几个妇人和耶稣的母亲弟兄 祷告。这十一个门徒是</p>
+<ul>
+<li>彼得</li>
+<li>约翰</li>
+<li>雅各</li>
+<li>安得烈</li>
+<li>腓力</li>
+<li>多马</li>
+<li>巴多罗买</li>
+<li>马太</li>
+<li>亚勒腓的儿子雅各</li>
+<li>奋锐党的西门</li>
+<li>雅各的儿子（注：或作“兄弟”）犹大</li>
+</ul>
+<p>1.5 - 1.23 彼得发言，说明选出新的使徒的原因和选择的标准。选择的标准是： 常与我们作伴、可见证主的复活。</p>
+<p>1.24 选出了符合标准的两个人：犹士都的约瑟和马提亚</p>
+<p>1.25 众人祷告请求主的指明</p>
+<p>1.26 摇签选出马提亚，和十一个使徒同列</p>
+<h3>思考</h3>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

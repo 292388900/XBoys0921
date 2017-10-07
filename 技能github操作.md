@@ -3,11 +3,11 @@
 打开 git shell
 
 配置用户名和密码
- git config --global user.name "supermans1201"
- git config --global user.email "supermans1201@gmail.com"
+ git config --global user.name ""
+ git config --global user.email ""
 
 创建密钥
- ssh-keygen -t rsa -C "supermans1201@gmail.com"
+ ssh-keygen -t rsa -C ""
 
 密钥位置
 F:\LM\github_rsa
@@ -70,5 +70,14 @@ github设置公
 	git pull origin master
 	git push origin master
 
+创建仓库
+	
+	token:dece69b8e141007bdd8c3b664e79515eaf69c29e
 
+示例
 
+	Invoke-WebRequest  https://api.github.com/user/repos?access_token=dece69b8e141007bdd8c3b664e79515eaf69c29e -Method POST -Body '{"name":"learn-nodejs"}'
+
+添加远程配置：
+
+	 git remote add origin git@github.com:supermans1201/learn-nodejs.git
